@@ -43,5 +43,20 @@ public class Task {
         int last=stack.get(stack.size()-2);
         System.out.println(last);
 
+        System.out.println("Sum of Stack");
+
+        List<Integer> list1=new ArrayList<>();
+
+        Object[] a =queue.toArray();
+         int sum=0;
+
+             for (int i : stack) {
+                 for (int j : queue) {
+                     sum = i + j;
+                 }
+             }
+
+        System.out.println(sum);
+
     }
 }
