@@ -10,8 +10,8 @@ public class pyramid {
             }
             for(int k=i;k>=1;k--){
 
-                if(i==6&&k==5){
-                    System.out.print(" ");
+                if(i==4){
+                    System.out.print("  ");
                     l++;
                 }else{
                   System.out.print(++l+ " ");

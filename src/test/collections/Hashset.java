@@ -10,5 +10,6 @@ public class Hashset {
         s.add(76);
         s.add(2);
         System.out.println(s);
+        
     }
 }
