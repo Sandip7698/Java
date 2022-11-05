@@ -2,6 +2,7 @@ package task;
 
 import java.util.*;
 
+
 public class Task {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -34,29 +35,25 @@ public class Task {
 
         System.out.println("Sum of the Queue and Stack");
 
+        Integer[] arr=new Integer[queue.size()];
+        arr=queue.toArray(arr);
 
-        System.out.println("Reverse of List");
-        Collections.reverse(stack);
+        List<Integer> result=Arrays.asList(arr);
+
+        List<Integer> result1=new ArrayList<>();
+
+        int k=result.size();
+            for(int j=0;j< result.size();j++){
+                result1.add(result.get(j)+stack.get(--k));
+        }
+        System.out.println(result1);
+
+      System.out.println("Reverse of List");
+        Collections.reverse(result1);
         System.out.println(stack);
 
         System.out.println("2nd Last position Element");
-        int last=stack.get(stack.size()-2);
+        int last=stack.get(result1.size()-2);
         System.out.println(last);
-
-        System.out.println("Sum of Stack");
-
-        List<Integer> list1=new ArrayList<>();
-
-        Object[] a =queue.toArray();
-         int sum=0;
-
-             for (int i : stack) {
-                 for (int j : queue) {
-                     sum = i + j;
-                 }
-             }
-
-        System.out.println(sum);
-
     }
 }
