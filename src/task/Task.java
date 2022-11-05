@@ -50,10 +50,10 @@ public class Task {
 
       System.out.println("Reverse of List");
         Collections.reverse(result1);
-        System.out.println(stack);
+        System.out.println(result1);
 
         System.out.println("2nd Last position Element");
-        int last=stack.get(result1.size()-2);
+        int last=result1.get(result1.size()-2);
         System.out.println(last);
     }
 }
